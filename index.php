@@ -16,6 +16,10 @@
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&family=Montserrat:wght@300;400&display=swap" rel="stylesheet"> 
 
+    <!-- Google icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
 </head>
 <body>
 
@@ -23,23 +27,73 @@
 
     <!-- Navigation bar starts -->
                 <div class="header">
-                    <div>
-                        <li><img src="imgs/elletblog_logo.png" alt="website logo" height="80" width="200"></li>
+                    <div class="logo">
+                        <a href="index.php"><img src="imgs/elletblog_logo.png" alt="website logo" width="200"></a>
                     </div>
-                    <div>
-                        <ul>
-                            <li><a href="index.php">HOME</a></li>
-                            <li><a href="#">ABOUT </a></li>
-                            <li><a href="#"> QUOTES </a></li>
-                            <li><a href="#"> CONTACT </a></li>
-                            <li><a href="#"><?php date_default_timezone_set("Africa/Lagos"); echo date("Y/m/d h:i:sa"); ?></a></li>
-                        </ul>
+                    <div class="menu" id="myLinks">
+                            <a href="index.php">HOME</a>
+                            <a href="#">ABOUT </a>
+                            <a href="#"> QUOTES </a>
+                            <a href="#"> CONTACT </a>
+                            <a href="#"><?php date_default_timezone_set("Africa/Lagos"); echo date("Y/m/d h:i:sa"); ?></a>
                     </div>
+
+                    <a href="javascript:void(0);" class="icon" onclick="myFunction()"><i class="fa fa-bars"></i></a>
                 </div>
 
-            <div class="slider">
+    <!-- Page Banner begins -->
+    <div class="banner">
+        <img src="imgs/two-people.jpg" alt="welcome to ElletBlog">
+        <div class="centered">Welcome To ElletBlog</div>
+    </div>
 
-            </div>
+    <pre>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+    </pre>
         
           
 
@@ -71,6 +125,8 @@
 
 
     </div>
+    <script src="js/script.js"></script>
     <script src="js/bootstrap.js"></script>
+
 </body>
 </html>
