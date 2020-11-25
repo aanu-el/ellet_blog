@@ -1,0 +1,30 @@
+body {
+    background-image: linear-gradient(120deg, #fdfbfb 0%, #ebedee 100%); 
+    font-family: 'Montserrat', sans-serif;
+}
+
+.header {
+    padding: 10px;
+    width: 100%;
+
+    background-color: blue;
+
+}
+.header li {
+    list-style-type: none;
+    float: left;
+}
+
+.header a {
+    display: block;
+	text-align: center;
+	padding: 14px 16px;
+	border-radius: 4px;
+	line-height: 10px;
+	font-size: 1.1em;
+	text-decoration: none;
+
+}
+
+
+@media and screen
