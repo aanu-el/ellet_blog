@@ -26,20 +26,7 @@
     <div class="page-wrapper">
 
     <!-- Navigation bar starts -->
-                <div class="header">
-                    <div class="logo">
-                        <a href="index.php"><img src="imgs/elletblog_logo.png" alt="website logo" width="200"></a>
-                    </div>
-                    <div class="menu" id="myLinks">
-                            <a href="index.php"><em>HOME</em></a>
-                            <a href="#"><em>ABOUT </em></a>
-                            <a href="#"><em> QUOTES </em></a>
-                            <a href="#"><em> CONTACT </em></a>
-                            <a href="#"><em><?php date_default_timezone_set("Africa/Lagos"); echo date("Y/m/d h:i:sa"); ?></em></a>
-                    </div>
-
-                    <a href="javascript:void(0);" class="icon" onclick="myFunction()"><i class="fa fa-bars"></i></a>
-                </div>
+                <?php include('includes/header.php') ?>
 
     <!-- Page Banner begins -->
     <div class="banner">
@@ -55,11 +42,11 @@
         <div class="blog_categories">
             <h1 class="categories_heading"><b>Quote Categories</b></h1>
             <ul>
-                <li><a href="#">Daily</a></li><hr>
-                <li><a href="#">Motivational</a></li> <hr>
-                <li><a href="#">Success</a></li> <hr>
-                <li><a href="#">Marriage</a></li> <hr>
-                <li><a href="#">Life</a></li> <hr>
+                <li><a href="daily.php">Daily</a></li><hr>
+                <li><a href="motivational.php">Motivational</a></li> <hr>
+                <li><a href="success.php">Success</a></li> <hr>
+                <li><a href="relationship.php">Relationship</a></li> <hr>
+                <li><a href="life.php">Life</a></li> <hr>
             </ul>
         </div>
 
@@ -98,18 +85,15 @@
     <!-- Newsletter -->
     <div>
         <div class="newsletter">
+            <div class="newsletter_form">
             <h3 class="newsletter_header">
                 <b>Sign Up for our Weekly Quotes Digest:</b>
             </h3>
-            <div class="newsletter_form">
                 <form action="index.php" method="post">
-                    <label for="name">
-                        <input type="text" placeholder="Your name:">
-                    </label><br>
                     <label for="emal">
                         <input type="email" placeholder="Email Address:*" required>
-                    </label><br>
-                    <button class="btn btn-primary submit">Sign up</button>
+                    </label>
+                    <button class="submit">Sign up</button>
                 </form>
             </div>
         </div>
@@ -117,22 +101,7 @@
     <br><br><br>
 
     <!-- Footer Begins -->
-    <div>
-        <div class="footer">
-            <div class="logo">
-                <a href="index.php"><img src="imgs/elletblog_logo.png" alt="website logo" width="200"></a>
-            </div>
-            <div class="address">
-                <span style="color: white"><strong>Phone:</strong> + 1 (234) 567 8901</span><br>
-                <span style="color: white"><strong>Email:</strong> support@yoursite.com </span><br>
-                <span style="color: white"><strong>Fax:</strong> + 1 (234) 567 8901</span>
-
-            </div>
-            <div class="copyright">
-                <span style="color: white">Copyright © 2020, ElletBlog. All rights reserved.</span> 
-            </div>
-        </div>
-    </div>
+    <?php include('includes/footer.php') ?>
 
     <!-- page wrapper ends -->
 </div>

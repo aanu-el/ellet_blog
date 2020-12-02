@@ -1,0 +1,73 @@
+.daily-heading {
+    color: blue;
+    text-align: center;
+    font-family: 'EB Garamond', serif;
+}
+
+.page-container {
+    background-color: steelblue;
+} 
+
+.quote-container {
+    
+    width: 95%;
+    margin: 0 auto;
+
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(6, minmax(200px, 250px));
+    grid-gap: 10px;
+} 
+
+.quote-img {
+    height: 100%;
+    width: 100%;
+
+}
+
+.quote-block {
+    position: relative;
+    text-align: center;
+
+    opacity: 0.9;
+    
+	-webkit-transition: all 400ms ease;
+	-moz-transition: all 400ms ease;
+	-o-transition: all 400ms ease;
+}
+
+.quote-block:hover{
+    opacity: 1;
+    transform: translate(3px, 3px);
+}
+
+.quote-text {
+    position: absolute;
+    top: 8px;
+    right: 16px;
+    
+    font-family: 'Dancing Script', cursive;
+    color: black;
+}
+
+
+@media only screen and (min-width: 768px){
+
+    .page-container {
+        background-color: inherit;
+    } 
+
+    .quote-container {
+    
+        width: 95%;
+        margin: 0 auto;
+    
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: repeat(3, minmax(200px, 250px));
+        grid-gap: 10px;
+    } 
+
+
+}
+

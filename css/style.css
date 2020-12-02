@@ -115,32 +115,33 @@ padding: 8px 10px;
     color: white;
 }
 
-.newsletter {
-    width: 90%;
-    padding: 10px;
-    margin: 0 auto;
-
-    background-color: rgba(192, 192, 192, 0.4);
-    box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.3), 0 7px 21px 0 rgba(0, 0, 0, 0.20);
-    border: 2px solid black;
-}
-
 .newsletter_header {
     text-align: left;
-    color: black;
+    color: blue;
     font-family: 'EB Garamond', serif;
 }
 
 form input {
     width: 350px;
-	height: 40px;
-	padding: 5px;
+	height: 35px;
+	padding: 10px;
 	margin: 5px;
 	border: 2px solid black;
 }
+
 .submit {
-    text-align: center;
-    width: 80%;
+    background-color: black;
+    color: white;
+    width: 80px;
+    height: 50px;
+
+
+}
+.submit:hover {
+    background-color: white;
+    color: black;
+
+    transition: all 500ms ease;
 }
 
 .footer {
@@ -247,28 +248,20 @@ form input {
         padding: 14px 16px;
         }
 
-        .newsletter {
-            width: 50%;
-            padding: 15px;
-            margin: 0 auto;
-        
-            background-color: rgba(192, 192, 192, 0.4);
-            box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.3), 0 7px 21px 0 rgba(0, 0, 0, 0.20);
-            border: 2px solid black;
+        .newsletter_form {
+            display: flex;
+            justify-content: space-evenly;
         }
-        
+
         form input {
             width: 500px;
             height: 40px;
-            padding: 5px;
+            padding: 10px;
             margin: 5px;
             border: 2px solid black;
             margin: 0 auto;
         }
-        .submit {
-            text-align: center;
-            width: 500px;
-        }
+ 
 
         .footer {
             padding: 20px;
