@@ -1,0 +1,45 @@
+body {
+    background-image: linear-gradient(120deg, #fdfbfb 0%, #ebedee 100%);
+}
+
+  .main-page{
+      margin-left: 300px;
+      padding: 0px 10px;
+
+      background-image: linear-gradient(to top, #e6e9f0 0%, #eef1f5 100%);
+  } 
+
+  .dashboard-category {
+      width: 60%;
+      margin: 0 auto;
+
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      grid-template-rows: repeat(2, minmax(200px, 300px) );
+      grid-gap: 50px;
+      
+
+  }
+
+  .category-a {
+      text-align: center;
+      padding: 60px;
+      background: #23463f;
+      color: black;
+
+      box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.3), 0 7px 21px 0 rgba(0, 0, 0, 0.20); 
+
+  }
+
+  .category-b {
+      text-align: center;
+      padding: 60px;
+      background: #23463f;
+      color: black;
+
+      box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.3), 0 7px 21px 0 rgba(0, 0, 0, 0.20); 
+  }
+
+
+
+

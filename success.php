@@ -22,80 +22,48 @@
 
 </head>
 <body>
+
+    <!-- connect to database -->
+    <?php include('includes/connect_db.php') ?>
+
+    <!-- Page Body starts -->
     <div class="page-wrapper">
 
         <!-- Navigation bar starts -->
         <?php include('includes/header.php') ?>
 
+        <br><br>
+
         <!-- Page content begins -->
-        <br><hr>
-        <h1 class="daily-heading">Success Quotes(<?php ?>)</h1><hr>
+        <?php
+            $sql = "SELECT * FROM sucess ORDER BY id DESC";
+            $query = mysqli_query($conn, $sql);
+            $total = mysqli_num_rows($query);
+        ?>
+
+        <hr>
+        <h1 class="daily-heading">Success Quotes(<?php echo $total; ?>)</h1><hr>
 
         <div class="page-container">
+            <div class="quote-container">
+                <!-- PHP CONNECTION-->
+                <?php
+                    $sql = "SELECT * FROM sucess ORDER BY id DESC";
+                    $query = mysqli_query($conn, $sql);
+                    $num = mysqli_num_rows($query);
+                    while($row = mysqli_fetch_array($query)){
 
-        <div class="quote-container">
-            <div class="quote-block"> 
-                <img src="imgs/quotes/1.jpg" alt="Quote Image" class="quote-img">
-                <div class="quote-text"><blockquote>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Atque itaque veniam autem vel unde quaerat dignissimos sequi asperiores quam officia ut, minima dolore dolores earum, suscipit incidunt qui sunt error.</blockquote>
-                <cite style="float: right;">-Bil Gate</cite></div>
-            </div>
-            <div class="quote-block">
-                <img src="imgs/quotes/2.jpg" alt="Quote Image" class="quote-img">
-                <div class="quote-text"><blockquote>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Atque itaque veniam autem vel unde quaerat dignissimos sequi asperiores quam officia ut, minima dolore dolores earum, suscipit incidunt qui sunt error.</blockquote>
-                <cite style="float: right;">-Bil Gate</cite></div>
-            </div>
-            <div class="quote-block">
-                <img src="imgs/quotes/3.jpg" alt="Quote Image" class="quote-img">
-                <div class="quote-text"><blockquote>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Atque itaque veniam autem vel unde quaerat dignissimos sequi asperiores quam officia ut, minima dolore dolores earum, suscipit incidunt qui sunt error.</blockquote>
-                <cite style="float: right;">-Bil Gate</cite></div>
-            </div>
-            <div class="quote-block">
-                <img src="imgs/quotes/4.jpg" alt="Quote Image" class="quote-img">
-                <div class="quote-text"><blockquote>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Atque itaque veniam autem vel unde quaerat dignissimos sequi asperiores quam officia ut, minima dolore dolores earum, suscipit incidunt qui sunt error.</blockquote>
-                <cite style="float: right;">-Bil Gate</cite></div>
-            </div>
-            <div class="quote-block">
-                <img src="imgs/quotes/5.jpg" alt="Quote Image" class="quote-img">
-                <div class="quote-text"><blockquote>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Atque itaque veniam autem vel unde quaerat dignissimos sequi asperiores quam officia ut, minima dolore dolores earum, suscipit incidunt qui sunt error.</blockquote>
-                <cite style="float: right;">-Bil Gate</cite></div>
-            </div>
-            <div class="quote-block">
-                <img src="imgs/quotes/6.jpg" alt="Quote Image" class="quote-img">
-                <div class="quote-text"><blockquote>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Atque itaque veniam autem vel unde quaerat dignissimos sequi asperiores quam officia ut, minima dolore dolores earum, suscipit incidunt qui sunt error.</blockquote>
-                <cite style="float: right;">-Bil Gate</cite></div>
-            </div>
-            <div class="quote-block">
-                <img src="imgs/quotes/7.jpg" alt="Quote Image" class="quote-img">
-                <div class="quote-text"><blockquote>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Atque itaque veniam autem vel unde quaerat dignissimos sequi asperiores quam officia ut, minima dolore dolores earum, suscipit incidunt qui sunt error.</blockquote>
-                <cite style="float: right;">-Bil Gate</cite></div>
-            </div>
-            <div class="quote-block">
-                <img src="imgs/quotes/8.jpg" alt="Quote Image" class="quote-img">
-                <div class="quote-text"><blockquote>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Atque itaque veniam autem vel unde quaerat dignissimos sequi asperiores quam officia ut, minima dolore dolores earum, suscipit incidunt qui sunt error.</blockquote>
-                <cite style="float: right;">-Bil Gate</cite></div>
-            </div>
-            <div class="quote-block"> 
-                <img src="imgs/quotes/1.jpg" alt="Quote Image" class="quote-img">
-                <div class="quote-text"><blockquote>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Atque itaque veniam autem vel unde quaerat dignissimos sequi asperiores quam officia ut, minima dolore dolores earum, suscipit incidunt qui sunt error.</blockquote>
-                <cite style="float: right;">-Bil Gate</cite></div>
-            </div>
-            <div class="quote-block">
-                <img src="imgs/quotes/2.jpg" alt="Quote Image" class="quote-img">
-                <div class="quote-text"><blockquote>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Atque itaque veniam autem vel unde quaerat dignissimos sequi asperiores quam officia ut, minima dolore dolores earum, suscipit incidunt qui sunt error.</blockquote>
-                <cite style="float: right;">-Bil Gate</cite></div>
-            </div>
-            <div class="quote-block">
-                <img src="imgs/quotes/3.jpg" alt="Quote Image" class="quote-img">
-                <div class="quote-text"><blockquote>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Atque itaque veniam autem vel unde quaerat dignissimos sequi asperiores quam officia ut, minima dolore dolores earum, suscipit incidunt qui sunt error.</blockquote>
-                <cite style="float: right;">-Bil Gate</cite></div>
-            </div>
-            <div class="quote-block">
-                <img src="imgs/quotes/4.jpg" alt="Quote Image" class="quote-img">
-                <div class="quote-text"><blockquote>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Atque itaque veniam autem vel unde quaerat dignissimos sequi asperiores quam officia ut, minima dolore dolores earum, suscipit incidunt qui sunt error.</blockquote>
-                <cite style="float: right;">-Bil Gate</cite></div>
-            </div>
-        </div>
+                ?> 
 
+            <div class="quote-block"> 
+                <img src="imgs/quotes/<?php echo $row['image']; ?>" alt="Quote Image" class="quote-img">
+                <div class="quote-text" style="color: <?php echo $row['text_color']; ?> ;" ><blockquote><?php echo $row['body']; ?></blockquote>
+                <cite style="float: right;">-<?php echo $row['author']; ?></cite></div>
+            </div>
+            
+                <?php   }   ?>
+            
+            </div>
         </div>
 
 

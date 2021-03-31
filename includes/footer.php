@@ -1,4 +1,30 @@
-<div>
+<html>
+    <head>
+        <style>
+            .footer {
+                width: 100%;
+                padding: 20px;
+                background: #262626;
+
+                display: grid;
+                grid-template-rows: repeat(2, minmax(100px, auto));
+            }
+
+            @media only screen and (min-width: 768px){
+                .footer {
+                padding: 20px;
+                background: #262626;
+        
+                display: flex;
+                flex: 1 1 0;
+                justify-content: space-around;
+            }
+            }
+
+        </style>
+    </head>
+    <body>
+    <div>
         <div class="footer">
             <div class="logo">
                 <a href="index.php"><img src="imgs/elletblog_logo.png" alt="website logo" width="200"></a>
@@ -14,3 +40,5 @@
             </div>
         </div>
     </div>
+    </body>
+</html>

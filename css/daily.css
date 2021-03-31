@@ -4,10 +4,6 @@
     font-family: 'EB Garamond', serif;
 }
 
-.page-container {
-    background-color: steelblue;
-} 
-
 .quote-container {
     
     width: 95%;
@@ -15,7 +11,6 @@
 
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(6, minmax(200px, 250px));
     grid-gap: 10px;
 } 
 
@@ -31,9 +26,7 @@
 
     opacity: 0.9;
     
-	-webkit-transition: all 400ms ease;
-	-moz-transition: all 400ms ease;
-	-o-transition: all 400ms ease;
+    transition: all 400ms ease;
 }
 
 .quote-block:hover{
@@ -46,8 +39,9 @@
     top: 8px;
     right: 16px;
     
-    font-family: 'Dancing Script', cursive;
-    color: black;
+    font-family: 'Sans-serif';
+    font-size: 1.2em;
+    color: white;
 }
 
 
@@ -64,7 +58,6 @@
     
         display: grid;
         grid-template-columns: repeat(4, 1fr);
-        grid-template-rows: repeat(3, minmax(200px, 250px));
         grid-gap: 10px;
     } 
 

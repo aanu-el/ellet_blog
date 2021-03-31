@@ -1,0 +1,86 @@
+body {
+    background: url('../imgs/admin-bg.jpg')no-repeat center fixed;
+    background-size: cover;  
+
+    font-family: 'Sans-serif';
+    
+    margin: 0;
+    padding: o;
+}
+
+.login {
+    width: 500px;
+    overflow: hidden;
+    margin: auto;
+    margin: 20 0 0 450px;
+    padding: 80px;
+    background: #23463f;
+    border-radius: 15px;
+}
+
+.heading {
+    width: 500px;
+    margin: auto;
+    margin-top: 30px;
+    padding: 10px;
+    background: #23463f;
+    border-radius: 15px;   
+
+    font-family: 'Sans-serif';
+}
+
+h2 {
+    text-align: center;
+    color: white;
+    padding: 10px;
+}
+
+label {
+    color: #08ffd1;
+    font-size: 17px;
+
+    font-family: 'Sans-serif';
+}
+
+#Uname {
+    width: 300px;
+    height: 30px;
+    border: none;
+    border-radius: 3px;
+    padding-left: 8px;
+}
+
+#Pass {
+    width: 300px;
+    height: 30px;
+    border: none;
+    border-radius: 3px;
+    padding-left: 8px;
+}
+
+#log {
+    float: right;
+    width: 100px;
+    height: 30px;
+    border: none;
+    border-radius: 17px;
+    padding-left: 7px;
+    color: black;
+
+    background-color: azure;
+}
+
+#log:hover{
+    background-color: black;
+    color: white;
+}
+
+span {
+    color: white;
+    font-size: 17px;
+}
+
+a {
+    float: right;
+    background-color: grey;
+}

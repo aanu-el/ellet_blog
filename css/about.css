@@ -1,0 +1,15 @@
+.post {
+    padding: 5px;
+}
+.post img {
+    float: left;
+    margin: 10px;
+}
+
+.space {
+    display: none;
+}
+
+@media only screen and (min-width: 768px){
+    
+}

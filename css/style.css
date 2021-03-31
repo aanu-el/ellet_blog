@@ -3,50 +3,6 @@ body {
     font-family: 'EB Garamond', serif;
 }
 
-/* style header begins */
-.header {
-    padding: 10px;
-    width: 100%;
-    background: #262626;
-
-    position: relative;
-}
-
-.header img{
-    height: 40px;
-}
-
-.menu {
-    display: none;
-}
-
-.menu a {
-    display: block;
-    padding: 14px 16px;
-    border-radius: 4px;
-    text-decoration: none;
-
-    color: white;
-    font-size: 1.1em;
-}
-
-.menu a:hover {
-        background-color: steelblue;
-        color: white;
-        text-decoration: none;
-        transition: all 350ms ease;
-}
-
-/* style the hambuger icon */
-.header a.icon{
-    display: block;
-    position: absolute;
-    right: 0;
-    top: 0;
-
-    color: white;
-}
-
 /* style page banner */
 .banner img{
     width: 100%;
@@ -144,14 +100,6 @@ form input {
     transition: all 500ms ease;
 }
 
-.footer {
-    width: 100%;
-    padding: 20px;
-    background: #262626;
-
-    display: grid;
-    grid-template-rows: repeat(2, minmax(100px, auto));
-}
 
 
 
@@ -260,16 +208,6 @@ form input {
             margin: 5px;
             border: 2px solid black;
             margin: 0 auto;
-        }
- 
-
-        .footer {
-            padding: 20px;
-            background: #262626;
-        
-            display: flex;
-            flex: 1 1 0;
-            justify-content: space-around;
         }
 
 }
