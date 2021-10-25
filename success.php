@@ -36,7 +36,7 @@
 
         <!-- Page content begins -->
         <?php
-            $sql = "SELECT * FROM sucess ORDER BY id DESC";
+            $sql = "SELECT * FROM success ORDER BY id DESC";
             $query = mysqli_query($conn, $sql);
             $total = mysqli_num_rows($query);
         ?>
